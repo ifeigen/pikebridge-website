@@ -8,13 +8,13 @@ const ContactPage = () => {
     {
       icon: <Mail className="w-5 h-5 text-emerald-500" />,
       title: "Email",
-      details: "hello@pikebridge.dev",
+      details: "contact@pikebridge.com",
       description: "For general inquiries and support"
     },
     {
       icon: <Phone className="w-5 h-5 text-emerald-500" />,
       title: "Phone",
-      details: "+1 (234) 567-890",
+      details: "+62 (813) 2711-0261",
       description: "Monday to Friday, 9AM to 6PM"
     },
     {
