@@ -58,10 +58,10 @@ const ContactPage = () => {
         {/* Header */}
         <div className="text-center mb-20">
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Let's Build Something Great Together
+            Let&apos;s Build Something Great Together
           </h1>
           <p className="text-lg text-gray-300 max-w-2xl mx-auto">
-            Whether you have a project in mind or just want to explore possibilities, we're here to help.
+            Whether you have a project in mind or just want to explore possibilities, we&apos;re here to help.
           </p>
         </div>
 

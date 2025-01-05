@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const Hero = () => {
     return (
@@ -24,17 +25,17 @@ const Hero = () => {
                             Pikebridge delivers scalable, secure, and high-performance solutions for businesses that demand excellence.
                         </p>
                         <div className="flex gap-4">
-                            <a href="/services">
+                            <Link href="/services">
                                 <button className="group bg-emerald-600 text-white px-6 py-3 rounded-lg hover:bg-emerald-700 transition flex items-center gap-2">
                                     View Our Services
                                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                                 </button>
-                            </a>
-                            <a href="/contact">
+                            </Link>
+                            <Link href="/contact">
                                 <button className="border border-gray-500 text-white px-6 py-3 rounded-lg hover:bg-white/10 transition">
                                     Contact Us
                                 </button>
-                            </a>
+                            </Link>
                         </div>
                     </div>
 

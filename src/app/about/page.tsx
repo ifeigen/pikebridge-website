@@ -1,5 +1,5 @@
 import React from 'react';
-import { Shield, Zap, Code2, ArrowRight, LineChart, RefreshCw, Users, Target, MessageSquare, FileCheck, Rocket, Wrench, CheckCircle, HeartHandshake } from 'lucide-react';
+import { Shield, Zap, Code2, LineChart, RefreshCw, MessageSquare, FileCheck, Rocket, Wrench, HeartHandshake } from 'lucide-react';
 import Navigation from '@/components/nav/nav';
 import Footer from '@/components/footer/page';
 import CTA from '@/components/cta';
@@ -87,7 +87,7 @@ const AboutPage = () => {
                 {/* Header */}
                 <div className="text-center mb-20">
                     <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                        Building Tomorrow's Solutions
+                        Building Tomorrow&apos;s Solutions
                     </h1>
                     <p className="text-lg text-gray-300 max-w-2xl mx-auto">
                         We combine technical excellence with strategic thinking to deliver solutions that drive your business forward.

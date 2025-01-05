@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { Menu, X, ArrowRight } from 'lucide-react';
-import Image from 'next/image';
+import Link from 'next/link';
 
 const Navigation = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,20 +30,19 @@ const Navigation = () => {
 
                         {/* Logo */}
                         <div className="absolute left-1/2 transform -translate-x-1/2">
-                            <a href="/">
+                            <Link href="/">
                                 <span className="text-xl font-serif text-white">
                                     Pikebridge
                                 </span>
-                            </a>
+                            </Link>
                         </div>
 
                         {/* Contact Button */}
-                        <a href="/contact">
+                        <Link href="/contact">
                             <button className="bg-emerald-600 text-white px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg hover:bg-emerald-700 transition flex items-center gap-1 text-xs sm:text-sm">
                                 Contact <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4" />
                             </button>
-                        </a>
-
+                        </Link>
                     </div>
                 </div>
             </nav>
@@ -73,14 +72,14 @@ const Navigation = () => {
                         {/* Menu Items */}
                         <div className="py-4">
                             {menuItems.map((item) => (
-                                <a
+                                <Link
                                     key={item.path}
                                     href={item.path}
                                     className="block px-4 py-3 text-white hover:bg-emerald-600 hover:text-white"
                                     onClick={() => setIsMenuOpen(false)}
                                 >
                                     {item.name}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div>

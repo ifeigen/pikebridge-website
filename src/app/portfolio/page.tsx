@@ -1,10 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import { GraduationCap, Rocket, Server, Code2, Globe, LineChart, Shield, Zap, ArrowRight } from 'lucide-react';
+import { GraduationCap, ArrowRight } from 'lucide-react';
 import Navigation from '@/components/nav/nav';
 import Footer from '@/components/footer/page';
 import CTA from '@/components/cta';
+import Image from 'next/image';
 
 const PortfolioPage = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
@@ -41,11 +42,6 @@ const PortfolioPage = () => {
                 <div className="absolute top-0 right-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl transform translate-x-1/3 -translate-y-1/2" />
                 <div className="absolute bottom-0 left-0 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl transform -translate-x-1/3 translate-y-1/2" />
             </div>
-
-
-
-
-
 
             {/* Content */}
             <div className="relative max-w-7xl mx-auto px-4 py-24">
@@ -86,7 +82,7 @@ const PortfolioPage = () => {
                             {/* Card Content */}
                             <div className="relative bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden">
                                 {/* Project Image */}
-                                <img
+                                <Image
                                     src={project.image}
                                     alt={project.title}
                                     className="w-full h-48 object-cover object-top"
